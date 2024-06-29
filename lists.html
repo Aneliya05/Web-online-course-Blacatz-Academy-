@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lists and tables</title>
+    </head>
+    <body>
+        <!--ORDERED LIST-->
+        <ol start="10" reversed type="I"> <!--1, A, a, i, I-->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ol>
+
+        <hr>
+
+        <!--UNORDERED LIST-->
+        <ul>
+            <li>Яйца</li>
+            <li>Мляко</li>
+            <li>Сирене</li>
+            <li>Домати</li>
+        </ul>
+        
+        <!--IMPORTANT STRUCTURE FOR WEBSITE MENUS-->
+        <ul>
+            <li>
+                <a href="">Link</a>
+            </li>
+            <li>
+                <a href="">Link</a>
+            </li>
+            <li>
+                <a href="">Link</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <!--DESCRIPTION LIST-->
+        <dl>
+            <dt>Анафора</dt>
+            <dd>
+                Lorem ipsum dolor sit amet.
+            </dd>
+        </dl>
+
+        <hr>
+        
+        <!--TABLES-->
+        <table border="1">
+            <tr>
+                <th>Номер</td>
+                <th>Име на технология</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>JavaScript</td>
+            </tr>
+        </table>
+
+        <hr>
+        
+        <!--TABLES - COLSPAN-->
+        <table border="1">
+            <tr>
+                <td colspan="2">Име</td> <!--colspan="3"-->
+                <td>Години</td>
+            </tr>
+            <tr>
+                <td>Иван</td> <!-- colspan="2"-->
+                <td>Желев</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Теодор</td> <!-- colspan="2"-->
+                <td>Василев</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        
+        <hr>
+        
+        <!--TABLES - ROWSPAN-->
+        <table border="1">
+            <tr>
+                <th>Име на студента</th>
+                <th>Номер на студента</th>
+                <th>Предмети</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Гошо Петков</td>
+                <td rowspan="3">12312312</td>
+                <td>Програмиране C#</td>
+            </tr>
+            <tr>
+                <td>HTML, CSS</td>
+            </tr>
+            <tr>
+                <td>Алгоритми</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form method="GET" action="https:google.com">
+            <label for="name">Name</label> <!--When clicking the label the cursor goes to the input (id necessary)-->
+            <input 
+                id="name"
+                type="text"
+                name="name"
+            />
+            <input type="submit"/>
+        </form>
+
+        <hr>
+
+        <input type="text" placeholder="Enter..." >
+        <br><br>
+        <input type="password">
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <input type="radio" name="gender">Мъж 
+        <input type="radio" name="gender">Жена
+        <!--Both names of the fields must be equal, otherwise both options can be selected at the same time-->
+        <br><br>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JS
+        <br><br>
+        
+
+        <!--SPECIAL THINGS FOR FILES-->
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file">
+        </form>
+
+        <hr>
+
+        <!--Other tags similar to the input tag-->
+        <select required name="student"> <!--If we are going to send data to the server, we will have to write NAME-->
+            <option>Моля изберете нещо</option>
+            <option value="1">Георги</option>
+            <option value="2">Пешо</option>
+        </select>
+
+        <br/><br/>
+
+        <textarea cols="10" rows="20"> </textarea>
+        <!--BETTER WAY:-->
+        <textarea style="width: 300px; height: 300px;"> </textarea>
+    </body>
+</html>
