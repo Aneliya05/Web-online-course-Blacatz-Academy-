@@ -5,64 +5,105 @@
     <title>Task 6 / Exercise 2</title>
 </head>
 <body>
-    <!-- HEADER START-->
-    <div>
-        <h1 style="text-align: center;">
-            Моята първа базова HTML страничка!
-        </h1>
+    <!-- HEADER -->
+    <div style="border: 1px solid black; background: lightblue;">
+        <h1 style="text-align: center;">Welcome to our site</h1>
     </div>
-    <!-- HEADER END-->
+    <!-- HEADER END -->
 
-    <!--IMAGE SECTION START-->
-
-    <!-- ./ means current directory-->
-    <div style="background:url('./Images/image.jpg'); 
-    height: 400px;background-size: 100% 100%;">     <!--background-size: cover   and background-position: center center;-->
-        <!--
-        <img 
-            src="/Exercises/Second Exercise/Images/image.jpg"
-            alt=""
-            style="
-                width: 100%;
-                height: 400px;
-
-            "
-        />
-        -->
-    </div>
-     <!--IMAGE SECTION END-->
-
-     <br>
-
-     <!-- TEXT SECTION START -->
-    <div>
-        <div style="float: left;width: 30%; border: 1px solid black;">
-            <p style="text-align:center;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Saepe ex nisi laudantium labore. Possimus tenetur nostrum
-                repellendus fuga laboriosam similique fugit minima 
-                nihil culpa debitis, soluta ullam assumenda esse dolorem.
-            </p>
+    <!-- MAIN -->
+    <div style="margin-top: 10px;">
+        <div 
+            style="border: 1px solid black;
+                width: 34%; 
+                float: left; 
+                background:orange; 
+                height: 300px;">
+             <h2 style="font-size: 32px; margin-left: 5px;">Heading</h2>
+             <p style="font-size: 21px; margin-left: 5px;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Eveniet laudantium sapiente veniam voluptatum harum explicabo
+                earum fuga ipsum nobis, fugit possimus soluta beatae id dolorem, 
+                quibusdam, eaque quam placeat odit?
+             </p>
         </div>
 
-        <div style="float: left;width: 30%; margin-left: 5%;border: 1px solid black;">
-            <p style="text-align:center;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Saepe ex nisi laudantium labore. Possimus tenetur nostrum
-                repellendus fuga laboriosam similique fugit minima 
-                nihil culpa debitis, soluta ullam assumenda esse dolorem.
-            </p>
-        </div>
-
-        <div style="float: right;width: 30%;border: 1px solid black;">
-            <p style="text-align:center;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Saepe ex nisi laudantiu%m labore. Possimus tenetur nostrum
-                repellendus fuga laboriosam similique fugit minima 
-                nihil culpa debitis, soluta ullam assumenda esse dolorem.
-            </p>
+        <div style="width: 64%; float: right; height: 300px;">
+            <img 
+                style="width: 100%; height: 100%;"
+                src="/Exercises/Second Exercise/Images/image.jpg"
+                alt="Image not found"
+            />
         </div>
     </div>
-     <!-- TEXT SECTION END-->
+    <!-- MAIN END -->
+
+    <!-- TEXT -->
+    <div style="clear: both;">  </div> <!-- IMPORTANT: DIV FOR CLEARING THE FLOATS-->
+    <div style="margin-top: 10px;">
+        <div style="width: 30%; float: left;">
+            <h3>Heading heading heading</h3>
+            <div>
+                <div style="width: 50%; float: left;">
+                    <img src="/Exercises/Second Exercise/Images/image.jpg" style="width: 100%;" />
+                </div>
+                <div style="width: 45%; float:right;">
+                   <p style="margin: 0;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 30%; float: left; margin-left: 5%;">
+            <h3>Heading heading heading</h3>
+            <div>
+                <div style="width: 50%; float: left;">
+                    <img src="/Exercises/Second Exercise/Images/image.jpg" style="width: 100%;" />
+                </div>
+                <div style="width: 45%; float:right;">
+                   <p style="margin: 0;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 30%; float: right;">
+            <h3>Heading heading heading</h3>
+            <div>
+                <div style="width: 50%; float: left;">
+                    <img src="/Exercises/Second Exercise/Images/image.jpg" style="width: 100%;" />
+                </div>
+                <div style="width: 45%; float:right;">
+                   <p style="margin: 0;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure, voluptate.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- TEXT END -->
+
+    <!-- FOOTER -->
+    <div style="clear: both;">  </div>
+    <div style="margin-top: 3%; 
+            background: lightblue; 
+            height: 55px; 
+            text-align: center;
+            border: 1px solid black;">
+            <br/>
+        Footer
+    </div>
+    <!-- FOOTER END -->
 </body>
 </html>
