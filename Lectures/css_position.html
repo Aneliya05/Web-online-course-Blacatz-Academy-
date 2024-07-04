@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The property Position</title>
+    <style>
+        .container {
+            background: lightgreen;
+            padding: 10px;
+            /* position: relative; */
+            height: 500px;
+        }
+
+        .A {
+            background: blue;
+            /* position: relative; /* acts like static but we can use top, left, right, bottom; */
+            /* top: -15px;
+            left: -10px;
+            /* bottom: -10px; */
+            /* bottom: 0; */
+            position: sticky;
+            top: 0;
+        }
+
+        .B {
+            background: purple;
+            position: absolute; /* add position: relative to the parent class - in this case - .container */
+            bottom: 0;
+        }
+
+        .C {
+            background: red;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">First</div>
+        <div class="B">Second</div>
+        <div class="C">Third</div>
+    </div>
+    <div style="height: 5000px;"></div>
+</body>
+</html>
