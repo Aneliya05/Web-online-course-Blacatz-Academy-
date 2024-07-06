@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .example::after { /*before, after */
+            content: "1";
+        }
+        .example::selection { /* first-line, first-letter */
+            color:red;
+            font-size: 32px;
+            background: blue;
+        }
+        /* COOL */
+    </style>
+</head>
+<body>
+    <div class="example">
+        First
+    </div>
+</body>
+</html>

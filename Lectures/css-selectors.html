@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* FIRST TYPE OF SELECTORS 
+        .class1.class2 {
+            color:red;
+        }
+        */
+
+        /* SECOND TYPE OF SELECTORS 
+        .c1 .c2 {
+            color:red;
+        }
+
+        div p a {   /* .c3 p a */
+        /*    color: blue;
+        }*/
+
+        /* THIRD TYPE OF SELECTORS 
+        
+        * {
+            font-family: Comic Sans MS;
+        }
+        
+        */
+        
+         /* FORTH TYPE OF SELECTORS  
+        .one, p, span {
+            color: red;
+        }
+        */
+        
+        
+         /* FIFTH TYPE OF SELECTORS  
+        .one > .two {
+            color:red;
+        }
+        The '>' is for direct parent    */
+
+        /* SIXTH TYPE OF SELECTORS  
+      
+        div + p {
+            color:red;
+        }
+        It paints the p which is right after the div */
+
+        /* SEVENTH TYPE OF SELECTORS  */
+        /* Lowest priority among the selectors*/
+        div {
+            color:red !important;
+        }
+        
+        /*Medium priority among the selectors */
+        .text-blue {
+            color:green !important;
+        }
+
+        /*Highest priority among the selectors before the inline selector*/
+        #my-div {
+            color: blue !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- FIRST TYPE OF SELECTORS 
+    
+    <div class="class1 class2">Text1</div>
+    <div class="class2">Text2</div>
+    -->
+
+    <!-- SECOND TYPE OF SELECTORS 
+
+    <div class="c3">
+    <p>123
+        <a href="">TextAhref</a>  Not necessary to add a class here  
+    </p>
+</div>
+<a href="">Outside</a>
+
+    <div class="c1">
+        <div class="c2">Text1</div>
+        <div>Text2</div>
+    </div>
+
+    <div class="c2">Text3</div>
+
+    -->
+
+    <!-- THIRD TYPE OF SELECTORS 
+     <div>123</div>
+     <p>123</p>
+     <span>123</span>
+
+     -->
+
+     <!-- FOURTH TYPE OF SELECTORS 
+     <div class="one">123</div>
+     <p>123</p>
+     <span>123</span>
+
+     -->
+
+
+     <!-- FIFTH TYPE OF SELECTORS 
+     
+     <div class="one">
+        <div class="two">Text</div>
+     </div>
+
+     <div class="one">
+        <p>
+            <span class="two">Text Two</span>
+        </p>
+     </div>
+     -->
+
+     <!-- SIXTH TYPE OF SELECTORS 
+     
+     <div></div>
+     <p>123</p>
+     <p>123</p>
+
+     <div></div>
+     <p>123</p>
+     <p>123</p>
+
+     -->
+
+    <!-- SEVENTH TYPE OF SELECTORS -->
+     <div class="text-blue" id="my-div" style="color: yellow !important;">
+        Text
+     </div>
+ 
+     
+</body>
+</html>
