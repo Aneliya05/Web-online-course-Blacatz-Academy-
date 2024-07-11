@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 / Task 1</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .left {
+            width: 40%;
+            float: left;
+        }
+
+        .right {
+            float: right;
+            width: 58%;
+        }
+
+        .left input {
+            width: 97%;
+        }
+        .clear-fix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Служител</h1>
+        <form method="post" enctype="multipart/form-data"> <!--action="" method="get" -->
+            <div class="left">
+                <table>
+                    <tr>
+                        <td>
+                           <label for="uniqueNumber">ИД</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="uniqueNumber" name="uniqueNum">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фирма
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Име
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фамилия
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Телефон
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Факс
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="right">
+                <table>
+                    <tr>
+                        <td>
+                            Работи от</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="radio" 
+                                id="home" 
+                                name="work"
+                            />
+                            <label for="home">Вкъщи</label>
+                            
+                            <input type="radio" id="office" name="work">
+                            <label for="office">Офис</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Град
+                        </td>
+                        <td>
+                            <select> <!-- <select multiple> can select many options-->
+                                <option value="">Моля изберете град</option>
+                                <option value="София">София</option> <!-- The value will be sent to the server, not the text -->
+                                <!-- We can write Sofia as a value or just leave it empty -->
+                                <option value="Пловдив">Пловдив</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Езици</td>
+                        <td>
+                            <input type="checkbox" id="langBG">
+                            <label for="langBG">Български</label>
+
+                            <input type="checkbox" id="langEN">
+                            <label for="langEN">Английски</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Информация
+                        </td>
+                        <td>
+                            <textarea cols="10" rows="10" name="information"></textarea> 
+                            <!-- DO NOT PUT AN INTERVAL BEFOE THE CLOSING TAG; OTHERWISE, THE CURSOR WILL START FROM ANOTHER POSITION-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Прикачване на файл</td>
+                        <td>
+                            <input type="file"> <!-- THE FORM METHOD HAS TO BE POST AND THE ENCTYPE MUST BE CONFIGURED-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear-fix">
+                <button type="submit">Изпрати</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
