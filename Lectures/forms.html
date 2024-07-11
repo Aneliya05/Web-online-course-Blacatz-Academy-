@@ -41,12 +41,15 @@
         <hr>
 
         <!--Other tags similar to the input tag-->
-        <select required name="student"> <!--If we are going to send data to the server, we will have to write NAME-->
-            <option>Моля изберете нещо</option>
-            <option value="1">Георги</option>
-            <option value="2">Пешо</option>
-        </select>
-
+        
+        <form>
+            <select required name="student"> <!--If we are going to send data to the server, we will have to write NAME-->
+                <option value="">Моля изберете нещо</option>
+                <option value="1">Георги</option>
+                <option value="2">Пешо</option>
+            </select>
+            <button type="submit">Send</button>
+        </form>
         <br/><br/>
 
         <textarea cols="10" rows="20"> </textarea>
