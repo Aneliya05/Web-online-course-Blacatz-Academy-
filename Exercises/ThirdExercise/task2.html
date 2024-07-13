@@ -4,8 +4,333 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 3 / Task 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; /* the size of the element will count the paddings and margins without making the element grow*/
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto; /* centers the element - 100% - 80% = 20% / 2 = 10% */
+            height: 50px;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        /*HEADER*/
+        .header {
+            background: #333333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .h-left {
+            float: left;
+        }
+
+        .logo {
+            font-size: 36px;
+            color: #dedede;
+        }
+
+        .h-right {
+            float: right;
+        }
+
+        .menu {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu li:nth-child(1) {
+            margin-left: 0 !important;
+        }
+
+        .menu li {
+            display: inline;
+            margin-left: 30px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .menu a:hover {
+            color: orange;
+        }
+        /*HEADER END*/
+
+        /*MAIN*/
+        .main {
+            padding: 20px 0;
+        }
+
+        /*MAIN END*/
+
+        /*MAIN FIRST SECTION*/
+        .mfs-left {
+            float: left;
+            height: 300px;
+            background: #dedede;
+            width: 40%;
+        }
+
+        .mfs-right {
+            float: right;
+            height: 300px;
+            background: #333333;
+            width: 58%;
+        }
+        /*MAIN FIRST SECTION END*/
+
+        /*MAIN SECOND SECTION*/
+        .box {
+            float: left;
+            width: 30%;
+            margin-top: 16px !important;
+        }
+
+        .box:nth-child(2) {
+            margin: 0 5%;
+            
+            /* OR JUST
+            margin-left: 5%;
+            margin-right: 5%; 
+            */
+        }
+        .box h4, .box-two h4 {
+            color: #615e5e;
+            font-weight: bold;
+        }
+
+        .box-left {
+            float: left;
+            width: 30%;
+        }
+        .box-right {
+            float: right;
+            width: 68%;
+            text-align: justify;
+        }
+
+        .box img {
+            border: 1px solid #dedede;
+            padding: 5px;
+        }
+
+        .read-more-clear {
+            clear: both;
+            text-align: right;
+            padding-top: 9px;
+        }
+
+        .read-more {
+            color: orange;
+            text-decoration: none;
+        }
+        /*MAIN SECOND SECTION END*/
+
+        /*MAIN THIRD SECTION*/
+        .box-two {
+            float: left;
+            width: 23.5%;
+            margin-top: 16px !important;
+        }
+
+        .box-two:nth-child(2), .box-two:nth-child(3) {
+            margin-left: 2%;
+        }
+
+        .box-two:nth-child(3) {
+            margin-right: 2%;
+        }
+
+        .box-two img {
+            padding: 10px;
+            border: 1px solid silver;
+        }
+        /*MAIN THIRD SECTION END*/
+
+        /*FOOTER*/
+        .footer {
+            height: 50px;
+            background-color: #333333;
+        }
+        /*FOOTER END*/
+    </style>
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container">
+            <div class="h-left">
+                <span class="logo">
+                    LOGO
+                </span>
+            </div>
+            <div class="h-right">
+                <ul class="menu">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN FIRST SECTION -->
+        <div class="container">
+            <div class="mfs-left">
+
+            </div>
+            <div class="mfs-right">
+                
+            </div>
+        </div>
+        <!-- MAIN FIRST SECTION END -->
+
+        <!-- MAIN SECOND SECTION -->
+        <div class="container">
+            <!-- BOX -->
+            <div class="box">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <div class="box-container">
+                    <div class="box-left">
+                        <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                    </div>
+                    <div class="box-right">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsa quisquam harum similique itaque et id reiciendis, sequi
+                        dignissimos reprehenderit cum doloremque deleniti, laborum, sint repellat.
+                    </div>
+                </div>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX END -->
+
+            <!-- BOX -->
+            <div class="box">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <div class="box-container">
+                    <div class="box-left">
+                        <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                    </div>
+                    <div class="box-right">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsa quisquam harum similique itaque et id reiciendis, sequi
+                        dignissimos reprehenderit cum doloremque deleniti, laborum, sint repellat.
+                    </div>
+                </div>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX END -->
+
+            <!-- BOX -->
+            <div class="box">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <div class="box-container">
+                    <div class="box-left">
+                        <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                    </div>
+                    <div class="box-right">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ipsa quisquam harum similique itaque et id reiciendis, sequi
+                        dignissimos reprehenderit cum doloremque deleniti, laborum, sint repellat.
+                    </div>
+                </div>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX END -->
+        </div>
+        
+        <!-- MAIN SECOND SECTION END -->
+
+        <!-- MAIN THIRD SECTION -->
+        <div class="container">
+            <!-- BOX TWO -->
+            <div class="box-two">
+                <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX TWO END -->
+
+            <!-- BOX TWO -->
+            <div class="box-two">
+                <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX TWO END -->
+
+            <!-- BOX TWO -->
+            <div class="box-two">
+                <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX TWO END -->
+
+            <!-- BOX TWO -->
+            <div class="box-two">
+                <img src="/Exercises/Second Exercise/Images/image.jpg" alt="">
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="read-more-clear">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!-- BOX TWO END -->
+        </div>
+        
+        <!-- MAIN THIRD SECTION END -->
+         <div class="clear-fix"></div>
+    </div>
+    <!-- MAIN END-->
+
+    <!-- FOOTER -->
+    <div class="footer"></div>
+    <!-- FOOTER END-->
 </body>
 </html>
