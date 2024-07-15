@@ -4,8 +4,564 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercise 4</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: Comic Sans MS;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .clear-fix {
+                clear: both;
+            }
+            
+            .main-bg {
+                background: url('/Exercises/Fourth\ Exercise/wdfinalefiles/4.jpg');
+            }
+
+            .main-btn {
+                border: 1px solid white;
+                background: unset;
+                color: white;
+                padding: 8px 24px;
+                font-size: 12px;
+            }
+
+            .main-btn:hover {
+                background: white;
+                color: purple;
+                cursor: pointer;
+            }
+
+            .secondary-btn {
+                border: 1px solid #48ca95;
+                background: unset;
+                color: #48ca95;
+                padding: 8px 24px;
+                font-size: 12px;
+            }
+
+            .secondary-btn:hover {
+                background: #48ca95;
+                color: white;
+                cursor: pointer;
+            }
+
+            .so-btn {
+                background: #48ca95;
+                border: unset;
+                color: white;
+                padding: 8px 24px;
+
+            }
+
+            .so-btn:hover {
+                color: #48ca95;
+                background: white;
+                cursor: pointer; 
+            }
+
+            /*MENU*/ 
+
+            .menu ul {
+                width: 390px;
+                /*ONE WAY*/
+                margin: 0 0 0 auto; /*thus we put it on the right*/
+                /*zero up, right, down and auto left*/
+
+                /*text-align: right; /*this moves the text to the right*/
+                padding: 16px;
+            }
+
+            .menu ul li {
+                display: inline-block;
+                margin-left: 16px;
+            }
+
+            .menu ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .menu ul li a:hover {
+                color: #48ca95;
+            }
+            /* MENU END */
+
+            /*HEADER*/
+            .header-container {
+                width: 75%;
+                margin: 0 auto;
+                padding: 80px 0;
+            }
+
+            .h-left, .h-right {
+                width: 50%;
+                float: left;
+            }
+
+            .h-left {
+                color: white;
+            }
+
+            .h-left h1 {
+                font-size: 50px;
+                margin-bottom: 16px;
+            }
+
+            .h-left p {
+                margin-bottom: 16px;
+            }
+            /*HEADER END*/
+
+            /*INFO*/
+            .info-container {
+                width: 70%;
+                margin: 0 auto;
+                padding: 40px 0;
+            }
+            .box {
+                border: 1px solid #48ca95;
+                width: 30%;
+                float: left;
+                padding: 36px;
+                text-align: center;
+                border-radius: 20px;
+            }
+
+            .box i {
+                font-size: 60px;
+                color:  #48ca95;
+            }
+
+            .box h3 {
+                margin: 12px 0;
+            }
+
+            .box p {
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .box:nth-child(2) {
+                margin: 0 5%;
+            }
+            /*INFO END*/
+
+            /*OUR PRODUCTS*/
+            .our-products {
+                background: #f7f7f7;
+                padding: 40px 0;
+            }
+
+            .our-products h2 {
+                width: 140px;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #48ca95;
+            }
+            .op-box {
+                width: 30%;
+                float: left;
+                padding: 20px;
+            }
+
+            .op-title {
+                background: black;
+                color: white;
+                text-align: center;
+                padding: 4px;
+            }
+
+            .op-box:nth-child(2) {
+                margin: 0 5%;
+            }
+
+            .our-products-container {
+                margin: 0 auto;
+                width: 70%;
+                background: white;
+            }
+
+            .op-btn-container {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            /*OUR PRODUCTS END*/
+
+            /*SPECIAL OFFER*/
+            .so-container {
+                width: 70%;
+                margin: 0 auto;
+                color: white;
+                padding: 50px 0;
+            }
+
+            .so-left, .so-right {
+                width: 50%;
+                float: left;
+            }
+
+            .so-container h2 {
+                font-size: 50px;
+                margin: 5px 0;
+            }
+            /*SPECIAL OFFER END*/
+
+            /*TESTIMONIALS*/
+            .testimonials {
+                padding: 50px 0;
+            }
+            .testimonials h2:first-child {
+                width: 210px;
+                margin: 0 auto;
+                border-bottom: 1px solid #48ca95;
+                text-align: center;
+            }
+
+            .t-container {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .t-container i {
+                font-size: 30px;
+            }
+
+            .t-container h2 {
+                margin: 5px 0;
+            }
+            /*TESTIMONIALS END*/
+
+            /*CONTACT US*/
+            .contact-us {
+                padding: 50px 0;
+            }
+
+            .contact-us h2 {
+                text-align: center;
+                color: white;
+                border-bottom: 1px solid white;
+                width: 140px;
+                margin: 0 auto;
+            }
+
+            .cu-container {
+                border: 1px solid white;
+                width: 40%;
+                margin: 30px auto 0 auto;
+                padding: 25px;
+            }
+
+            .cu-container input, 
+            .cu-container textarea {
+                border: 1px solid white;
+                background: unset;
+                color: white;
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            .cu-container input::placeholder, 
+            .cu-container textarea::placeholder {
+                color: white;
+            }
+
+            .cu-container input:focus, 
+            .cu-container textarea:focus {
+                outline: none;
+            }
+
+            .cu-container div:last-child {
+                text-align: center;
+            }
+
+            .cu-container .so-btn {
+                border-radius: 20px;
+            }
+            /*CONTACT US END*/
+
+            /*FOOTER*/
+            .footer {
+                background: #252527;
+                padding: 50px 0 25px 0;
+                color: white;
+            }
+
+            .f-container {
+                width: 70%;
+                margin: 0 auto;
+                border-bottom: 1px solid white;
+                padding-bottom: 30px;
+            }
+
+            .f-box {
+                width: 30%;
+                float: left;
+            }
+
+            .f-box:nth-child(2) {
+                margin: 0 5%;
+            }
+
+            .footer input {
+                border-radius: 5px;
+                border: unset;
+                padding: 5px;
+                margin-bottom: 10px;
+                outline: unset;
+                width: 100%;
+            }
+
+            .footer button {
+                border-radius: 5px;
+            }
+            .copyright {
+                text-align: center;
+                margin-top: 25px;
+            }
+            /*FOOTER END*/
+        </style>
     </head>
     <body>
-        
+        <!-- MENU -->
+        <div class="menu main-bg"> <!--style="position: fixed; width: 100%;"-->
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="#so">Special Offer</a>
+                </li>
+                <li>
+                    <a href="">Contact us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- MENU END -->
+
+        <!-- HEADER -->
+        <div class="header main-bg">
+            <div class="header-container">
+                <div class="h-left">
+                    <h2>Computers and Laptops</h2>
+                    <h1>Accessories</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Ad, eveniet.
+                    </p>
+                    <button class="main-btn">Buy Now</button>
+                    <button class="main-btn">Contact</button>
+                </div>
+                <div class="h-right">
+                    <img src="/Exercises/Fourth Exercise/wdfinalefiles/1.png" alt="">
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+        <!-- HEADER END-->
+
+        <!-- INFO -->
+         <div class="info" id="info">
+            <div class="info-container">
+                <!-- BOX START -->
+                <div class="box">
+                    <i class="fa fa-computer"></i>
+                    <h3>Computer</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                       Ipsam, maiores? 
+                       Possimus maxime modi quasi quod.</p>
+                </div>
+                <!-- BOX END -->
+
+                <!-- BOX START -->
+                <div class="box">
+                    <i class="fa fa-computer"></i>
+                    <h3>Computer</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                       Ipsam, maiores? 
+                       Possimus maxime modi quasi quod.</p>
+                </div>
+                <!-- BOX END -->
+
+                <!-- BOX START -->
+                <div class="box">
+                    <i class="fa fa-computer"></i>
+                    <h3>Computer</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                       Ipsam, maiores? 
+                       Possimus maxime modi quasi quod.</p>
+                </div>
+                <!-- BOX END -->
+                 <div class="clear-fix"></div>
+            </div>
+         </div>
+        <!-- INFO -->
+
+        <!-- OUR PRODUCTS -->
+         <div class="our-products">
+            <div>
+                <h2>OUR PRODUCTS</h2>
+            </div>
+            <div class="our-products-container">
+                <!-- ROW -->
+                <div class="op-row">
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+                </div>
+                <!-- ROW END -->
+
+                <!-- ROW -->
+                <div class="op-row">
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+
+                    <!-- BOX -->
+                    <div class="op-box">
+                        <img src="/Exercises/Fourth Exercise/wdfinalefiles/2.png">
+                        <div  class="op-title">Computer</div>
+                    </div>
+                    <!-- BOX END -->
+                </div>
+                <!-- ROW END -->
+                <div class="clear-fix"></div>
+                <div class="op-btn-container">
+                    <button class="secondary-btn">See More</button>
+                </div>
+            </div>
+         </div>
+        <!-- OUR PRODUCTS END -->
+
+        <!-- SPECIAL OFFER -->
+         <div class="special-offer main-bg" id="so">
+            <div class="so-container">
+                <div class="so-left">
+                    <h3>Special Offer</h3>
+                    <h2>40% OFF</h2>
+                    <button class="so-btn">Shop Now</button>
+                </div>
+                <div class="so-right">
+                    <img src="/Exercises/Fourth Exercise/wdfinalefiles/3.png">
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+         </div>
+        <!-- SPECIAL OFFER END -->
+
+        <!-- TESTIMONIALS -->
+         <div class="testimonials">
+            <div>
+                <h2>TESTIMONIALS</h2>
+            </div>
+            <div class="t-container">
+                <i class="fas fa-quote-left"></i>
+                <h2>John Doe</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    A ducimus vero quis eligendi at excepturi veniam obcaecati,
+                    enim reprehenderit nemo aut esse, nobis commodi cumque! 
+                    Vitae quis mollitia accusantium nulla corrupti, necessitatibus
+                    molestiae, voluptatum numquam eaque ullam sunt ratione 
+                    quisquam atque fugit maxime sed, deleniti dolorem id. Totam,
+                    explicabo placeat!
+                </p>
+            </div>
+         </div>
+        <!-- TESTIMONIALS END -->
+
+        <!-- CONTACT US -->
+         <div class="contact-us main-bg">
+            <div>
+                <h2>CONTACT NOW</h2>
+            </div>
+            <div class="cu-container">
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
+                    <textarea rows="7" name="" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <button class="so-btn">SEND</button>
+                </div>
+            </div>
+         </div>
+        <!-- CONTACT US END -->
+
+        <!-- FOOTER -->
+         <div class="footer">
+            <div class="f-container">
+                <div class="f-box">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                       adipisicing elit. Corrupti, nostrum.</p>
+                </div>
+
+                <div class="f-box">
+                    <h3>Contact Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                       adipisicing elit. Corrupti, nostrum.</p>
+                </div>
+
+                <div class="f-box">
+                    <h3>Newsletter</h3>
+                    <div>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <button class="so-btn">SUBSCRIBE</button>
+                </div>
+
+                <div class="clear-fix"></div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 All Rights Reserved
+            </div>
+         </div>
+        <!-- FOOTER END -->
     </body>
 </html>
