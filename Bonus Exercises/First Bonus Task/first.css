@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+/*NAV*/
+.nav {
+    width: 250px;
+    min-height: 100%; /*if we add new elements, it will expand. this is the difference between height and min-height*/
+    position: fixed;
+    box-shadow: 1px 0px 0 0px rgba(71, 68, 68, 0.7);
+    background: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 25px;
+}
+
+.nav ul li {
+    margin-top: 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #a3a3a5;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.nav ul img {
+    width: 36px;
+    vertical-align: middle;
+}
+
+.nav ul span {
+    font-size: 21px;
+    vertical-align: bottom;
+    margin-left: 16px;
+}
+
+.menu-title {
+    font-weight: bold;
+    color: #69ad27;
+    font-size: 24px;
+}
+
+.active {
+    color: #69ad27 !important;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10%;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(69, 159, 27, 0.7);
+    color: white !important;
+}
+/*NAV END*/
+
+/*MAIN CONTAINER*/
+.main-container {
+    padding-left: 250px;
+    min-height: 100%;
+    background: #eff1f7;
+}
+/*MAIN CONTAINER END*/
+
+/*HEADER BAR*/
+.header-bar {
+    background: white;
+    height: 120px;
+}
+
+.hb-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hb-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.search-box {
+    background: #f3f7fd;
+    margin-top: 27px;
+    margin-left: 50px;
+    display: inline-block; /*If it is inline, margins don't work*/
+    padding: 16px 26px;
+    border-radius: 50px;
+}
+
+.search-box img {
+    width: 31px;
+    vertical-align: middle;
+}
+
+.search-box input {
+    background: unset;
+    border: unset;
+    font-size: 21px;
+    vertical-align: bottom;
+    height: 33px;
+    margin-left: 20px;
+    /*outline: none;*/
+}
+
+input:focus {
+    outline: none;
+}
+
+.not-icons {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 60px;
+    margin-right: 50px;
+}
+
+.hb-right {
+    text-align: right;
+    padding-top: 27px;
+}
+.hb-right > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*HEADER BAR END*/
