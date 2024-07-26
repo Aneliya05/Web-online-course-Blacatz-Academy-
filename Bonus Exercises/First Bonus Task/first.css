@@ -9,7 +9,7 @@ body, html {
     font-family: Arial;
 }
 
-ul, li {
+ul, li, h1, p {
     padding: 0;
     margin: 0;
 }
@@ -17,6 +17,7 @@ ul, li {
 img {
     width: 100%;
 }
+
 /*NAV*/
 .nav {
     width: 250px;
@@ -82,6 +83,23 @@ img {
     padding-left: 250px;
     min-height: 100%;
     background: #eff1f7;
+}
+
+
+.mch {
+    color: #2e4765;
+}
+
+.sc {
+    color: silver;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(221, 221, 221);
 }
 /*MAIN CONTAINER END*/
 
@@ -150,3 +168,117 @@ input:focus {
     vertical-align: middle;
 }
 /*HEADER BAR END*/
+
+/*CONTAINER*/
+.container {
+    padding-top: 27px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.box {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+}
+
+/*CONTAINER END*/
+
+/*STATISTICS*/
+.stat-box {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.stat-box:first-of-type {
+    padding-left: 0;
+}
+
+.stat-box:last-of-type {
+    padding-right: 0;
+}
+
+.stat-box-inner {
+    padding: 40px 25px;
+}
+
+.sb-left {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+.sb-left img {
+    width: 60px;
+}
+
+.sb-right {
+    padding-left: 120px;
+}
+
+
+/*STATISTICS END*/
+
+/*COMPANY INCOME*/
+.company-income {
+    padding: 20px;
+    margin-top: 27px;
+    min-height: 190px;
+}
+
+.income-row > div {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+}
+/*COMPANY INCOME END*/
+
+/*RECENT ACTIVITY*/
+.recent-activity {
+    margin-top: 27px;
+    min-height: 600px;
+}
+
+.recent-activity > div {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.recent-activity .box {
+    padding: 20px;
+    min-height: 580px;
+}
+
+.recent-activity ul {
+    padding-left: 27px;
+}
+
+.recent-activity ul li {
+    color: #46f51a;
+    font-size: 24px;
+    /*vertical-align: middle;*/ /* Will not work here - ul li is not an inline element */
+}
+
+.recent-activity ul li h5 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.recent-activity ul li p {
+    font-size: 12px;
+}
+
+.ra-left {
+    padding-left: 0 !important;
+}
+
+.ra-right {
+    padding-right: 0 !important;
+}
+/*RECENT ACTIVITY END*/
