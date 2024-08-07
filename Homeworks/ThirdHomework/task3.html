@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 / Third Homework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 25%;
+            margin: 20px auto 0px;
+        }
+
+        div h1 {
+            text-align: left;
+        }
+        form {
+           width: 100%;
+           margin-top: 10%;
+        }
+
+        tr {
+            line-height: 1.3;
+        }
+        label {
+            font-size: 25px;
+        }
+
+        input, select{
+            padding: 3px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(103, 100, 100);
+        }
+
+        .margin-right-styling {
+            margin-right: 5%;
+        }
+        button {
+            margin-top: 25px;
+            padding: 5px 10px 5px;
+            font-size: 20px;
+        }
+
+        .accept {
+            width: 20%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Форма за регистрация</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="first-name">Име</label>
+                </td>
+                <td>
+                    <input type="text" id="first-name" name="firstName" placeholder="Въведи име">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="middle-name">Презиме</label>
+                </td>
+                <td>
+                    <input type="text" id="middle-name" name="middleName" placeholder="Въведи презиме">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last-name">Фамилия</label>
+                </td>
+                <td>
+                    <input type="text" id="last-name" name="lastName" placeholder="Въведи фамилия">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="Въведи email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone-number">Телефон</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone-number" name="phoneNumber" placeholder="Въведи телефон">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Пол</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male" class="margin-right-styling">Мъж</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Жена</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="accept">
+                    <label for="accept-conditions">Приемам условията</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="first-option" name="gdpr">
+                    <label for="first-option" class="margin-right-styling">ГДПР</label>
+                    <input type="checkbox" id="second-option" name="common">
+                    <label for="second-option">Общите условия</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Години</label>
+                </td>
+                <td>
+                    <select required>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Регистрация</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
