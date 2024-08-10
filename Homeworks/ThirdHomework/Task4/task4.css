@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
 html, body {
@@ -11,10 +12,17 @@ html, body {
     background: silver;
 }
 
+img {
+    width: 100%;
+}
+.clear-fix {
+    clear: both;
+}
+
 /*NAV START*/
 
 .nav {
-    height: 80px;
+    min-height: 80px;
     background: white;
 }
 
@@ -38,9 +46,11 @@ html, body {
 .menu li a {
     text-decoration: none;
     /*text-transform: capitalize;*/
-    color: black;
+    color: rgb(143, 141, 141);
     font-size: 20px;
     font-weight: bold;
+    display: block;
+    padding: 5px;
 }
 
 .menu li a:hover {
@@ -53,11 +63,120 @@ html, body {
 .heading {
     text-align: center;
     width: 100%;
-    height: 40%;
+    min-height: 40%;
     background: #edf0f4;
+    position: relative;
+    line-height: 1.8;
 }
-h1 {
- 
+
+.heading h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 800;
+    color:  rgb(80, 79, 79);
+}
+
+.heading h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(143, 141, 141);
 }
 
 /*HEADING END*/
+
+/*CONTAINER*/
+.container {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.container-main {
+    padding: 0 45px;
+    height: 100%;
+}
+/*CONTAINER END*/
+
+/*SUBCRIPTION*/
+.subscription {
+    width: 100%;
+    height: 17%;
+    padding: 30px 20px 0 0;
+    border-bottom: 1px solid silver;
+    padding-left: 45px;
+}
+
+.sub-left {
+    float: left;
+    width: 40%;
+    padding: 30px 30px 30px 0;
+}
+
+.sub-left h3 {
+    color: rgb(102, 101, 101);
+    padding: 7px;
+    font-weight: 800;
+    word-break:keep-all;
+}
+
+.sub-right {
+    width: 50%;
+    float: right;
+    padding: 30px 0px 30px 30px;
+}
+
+.sub-right input {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    width: 60%;
+    outline: none;
+    font-size: 15px;
+}
+
+.sub-right button {
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+}
+
+.sub-right button:hover {
+    color: orange;
+}
+/*SUBSCRIPTION END*/
+
+/*IMAGES SECTION*/
+.img-section {
+    margin-top: 3%;
+    height: 50%;
+}
+
+.img-left {
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+.img-left img {
+    border-radius: 5px;
+    
+}
+
+.img-right {
+    float: left;
+    width: 30.5%;
+    height: 100%;
+    margin-left: 3%;
+    line-height: 3.8;
+}
+/*IMAGES SECTION END*/
