@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Task 2</title>
+    <link rel="stylesheet" href="/Bonus Exercises/Second Bonus Task/first.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="h-left">
+            <div class="logo"></div>
+        </div>
+        <div class="h-right">
+            <button onclick="toggle()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav" id="nav">
+            <a href="">
+                <span>Начало</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+            <a href="">
+                <span>Меню</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+            <a href="">
+                <span>Резервации</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+            <a href="">
+                <span>За нас</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+            <a href="">
+                <span>Контакти</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- HEADER END -->
+
+    <div class="top-section">
+        <h1>Ресторант "Дизайн"</h1>
+        <button>Поръчай</button>
+    </div>
+    <script>
+        function toggle() {
+            /* alert('Hello');*/
+
+            var nav = document.getElementById('nav');
+            /*console.log(nav.style);*/
+
+            if(nav.style.display == 'block')
+            {
+                nav.style.display = 'none';
+            }
+            else
+            {
+                nav.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
