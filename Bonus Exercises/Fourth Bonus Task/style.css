@@ -16,7 +16,6 @@ body, html {
 
 .header-inner-left {
     width: 30%;
-    background: red;
     float: left;
 }
 
@@ -24,4 +23,17 @@ body, html {
     width: 70%;
     background: blue;
     float: right;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.logo {
+    background: white;
+    text-align: center;
+
+    padding: 0 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
 }
