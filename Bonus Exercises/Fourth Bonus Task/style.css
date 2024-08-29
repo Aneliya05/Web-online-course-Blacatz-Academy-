@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300..800&display=swap');
 
 body, html {
     margin: 0;
@@ -60,11 +60,16 @@ ul {
     color: white;
     font-family: Open Sans; /*this is necessary; otherwise, it won't work*/
     text-decoration: none;
+    font-weight: 800;
 }
 
 .nav li a:hover {
     opacity: 0.7;
     /*font-size: 25px;*/
+}
+
+.nav li:hover .nav-dropdown { /*like a js function*/
+    display: block;
 }
 
 .nav-dropdown {
@@ -74,6 +79,7 @@ ul {
     text-align: left;
     min-width: 100px; /*stretches accroding to the elements in it; it is worse to put only width*/
     /*opacity: 0.7; - this way the text also becomes a little transparent*/
+    display: none;
 } 
 
 .nav-dropdown li {
@@ -83,13 +89,50 @@ ul {
 
 .nav-dropdown li a {
     color: black;
-    font-weight: 500;
+    font-weight: 300; 
 }
 
 .dropdown-header {
     color: black;
     padding-bottom: 7px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid black; /*possible to be done with <hr>*/
     font-family: Open Sans;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.header-text {
+    padding-top: 14%;
+    text-align: center;
+}
+
+.header-text h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 8px; /*must not be with pixels nut sth crashed again*/ 
+    color: white;
+    margin: 0;
+}
+
+.header-text h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 8px;
+    opacity: 0.7;
+}
+
+.header-text button {
+    border: unset;
+    color: white;
+    background: black;
+    padding: 10px 21px;
+}
+
+.header-text button:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
