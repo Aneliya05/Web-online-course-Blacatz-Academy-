@@ -12,6 +12,10 @@ ul, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.clear-fix {
+    clear: both;
+}
+
 /*HEADER*/
 .container {
     background: 
@@ -89,25 +93,26 @@ ul, h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
 }
 
-.headings button {
+.background-button {
     border: 2px solid #5be66a;
     background: transparent;
     color: #5be66a;
-    padding: 10px 25px;
+    padding: 10px 30px;
     margin-top: 0.5%;
     cursor: pointer;
     font-size: 15px;
 }
 
-.headings button:hover {
+.background-button:hover {
     color: white;
     background: #3e9046;
+    border: 1px solid #3e9046;
 }
 /*HEADINGS END*/
 
-/*WHY US*/
+/*WHY US SECTION*/
 .why-us {
-    min-height: 100vh;
+    min-height: 60vh;
     text-align: center;
     margin-top: 5vh;
 }
@@ -131,13 +136,13 @@ ul, h1, h2, h3, h4, h5, h6 {
     color: #3e9046;
 }
 
-/*BOX*/
 .reasons {
     min-height: 30vh;
     width: 60%;
     margin: 0 auto;
 }
 
+/*BOX*/
 .reason-box {
     float: left;
     width: 30%;
@@ -161,11 +166,13 @@ ul, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+/*BOX END*/
+
 .reasons button {
     border: 2px solid #3e9046;
     background: transparent;
     color: #3e9046;
-    padding: 10px 25px;
+    padding: 10px 30px;
     margin-top: 5vh;
     cursor: pointer;
     font-size: 15px;
@@ -173,9 +180,154 @@ ul, h1, h2, h3, h4, h5, h6 {
 
 .reasons button:hover {
     background: #3e9046;
+    border: #3e9046;
     color: white;
 }
 
-/*BOX END*/
+/*WHY US SECTION END/*
 
-/*WHY US END/*
+/*BOAT SECTION*/
+.boat {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('/Homeworks/FourthHomework/background2.png');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 16%;
+    line-height: 1.5;
+    margin-top: 3vh;
+}
+
+.boat h2 {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.boat p {
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+/*BOAT SECTION END*/
+
+/*CONTACT US SECTION*/
+.contact-us {
+    height: 85vh;
+    text-align: center;
+}
+
+.contact-us-text {
+    box-sizing: border-box;
+    position: relative;
+    top: 5%;
+    bottom: 5%;
+    line-height: 2;
+}
+
+.contact-us-text h3 {
+    font-size: 32px;
+}
+
+.contact-us-text h5 {
+    color: grey;
+}
+
+.details {
+    background: grey;
+    position: relative;
+    top: 10%;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 45vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 4vh 2vw;
+    text-align: center;
+}
+
+.details input, .details textarea {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2vh;
+    background: unset;
+    border: 1px solid #5be66a;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+}
+
+.details input::placeholder,
+.details textarea::placeholder {
+    color: white;
+}
+
+.details textarea {
+    min-height: 6vh;
+}
+.details textarea::placeholder {
+    padding: 1.8% 0;
+}
+
+.details-btn {
+    width: 25%;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background: #5be66a;
+    color: white;
+    margin-top: 1vh;
+}
+/*CONTACT US SECTION END*/
+
+/*FOOTER*/
+.footer {
+    background: black;
+    min-height: 40vh;
+    text-align: center;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 8vh;
+}
+
+.second-logo,
+.footer-text {
+    text-transform: uppercase;
+    color: #5be66a;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 6px;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 5vh;;
+}
+
+.footer input {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2vh;
+    background: white;
+    border: unset;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: Ubuntu; 
+    color: black;
+}
+
+.footer-btn {
+    width: 15%;
+}
+/*FOOTER END*/
