@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Ubuntu;
+    box-sizing: border-box;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    min-height: 10vh;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.header .logo img {
+    width: 3vw;
+    height: 100%;
+}
+
+.search-bar {
+    float: left;
+    width: 18%;
+    background: rgb(230, 227, 227);
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    top: 1vh;
+}
+
+.search-bar input {
+    border: unset;
+    background: transparent;
+    outline: none;
+    width: 5vw;
+    float: left;
+}
+
+.search-bar i {
+    color: #7693c8;
+    cursor: pointer;
+    float: right;
+}
+
+.admin-profile {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.admin-profile img {
+    width: 3vw;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.admin-profile span {
+    vertical-align: middle;
+}
+
+/*HEADER END*/
+
+/*SIDE MENU*/
+.side-menu {
+    float: left;
+    width: 20%;
+    min-height: 90vh; 
+    margin-top: 2vh;
+}
+/*SIDE MENU END*/
+
+/*MAIN CONTAINER*/
+.main-container {
+    background: grey;
+    float: left;
+    width: 80%;
+    min-height: 90vh; 
+    margin-top: 2vh;
+}
+/*MAIN CONTAINER END*/
