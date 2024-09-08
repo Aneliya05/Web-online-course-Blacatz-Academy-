@@ -23,7 +23,7 @@ ul, h1, h2, h3, h4, h5, h6 {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
       ),
-    url('/Homeworks/FourthHomework/background.jpeg');
+    url('/Homeworks/FourthHomework/Task1 - travel/background.jpeg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -193,7 +193,7 @@ ul, h1, h2, h3, h4, h5, h6 {
             rgba(0, 0, 0, 0.7), 
             rgba(0, 0, 0, 0.5)
         ),
-        url('/Homeworks/FourthHomework/background2.png');
+        url('/Homeworks/FourthHomework/Task1 - travel/background2.png');
     background-size: cover;
     background-position: center center;
     color: white;
