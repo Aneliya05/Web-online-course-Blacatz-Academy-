@@ -4,7 +4,7 @@ html, body {
 }
 
 * {
-    font-family: Ubuntu;
+    font-family: Open Sans;
     box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@ html, body {
     border: unset;
     background: transparent;
     outline: none;
-    width: 5vw;
+    width: 80%;
     float: left;
 }
 
@@ -53,6 +53,7 @@ html, body {
     color: #7693c8;
     cursor: pointer;
     float: right;
+    margin-top: 1%;
 }
 
 .admin-profile {
@@ -79,7 +80,63 @@ html, body {
     width: 20%;
     min-height: 90vh; 
     margin-top: 2vh;
+    padding: 20px 25px;
 }
+
+.menu {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.heading {
+    color: #7693c8;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.menu > div {
+    margin: 15px 0 15px 0;
+}
+
+.menu div a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    /*text-indent: 10px;*/
+}
+
+.menu div a:hover {
+    background: lightblue;
+}
+
+.menu div a i {
+    color: #737378;
+    font-size: 25px !important;
+    margin-right: 4%;
+    vertical-align: middle;
+}
+
+.menu div span {
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.menu .elements span {
+    font-weight: 500;
+}
+
+.menu .elements a {
+    margin-bottom: 10px;
+}
+
+
 /*SIDE MENU END*/
 
 /*MAIN CONTAINER*/
