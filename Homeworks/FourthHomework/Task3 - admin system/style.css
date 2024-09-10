@@ -146,5 +146,15 @@ html, body {
     width: 80%;
     min-height: 90vh; 
     margin-top: 2vh;
+    padding: 25px;
+}
+
+.main-container .board {
+    background: blue;
+    min-height: 100vh;
+}
+
+.main-container .board .box {
+    background: purple;
 }
 /*MAIN CONTAINER END*/
