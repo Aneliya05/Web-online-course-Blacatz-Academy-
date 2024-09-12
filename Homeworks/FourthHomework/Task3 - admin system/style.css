@@ -150,14 +150,16 @@ html, body {
     padding: 25px;
 }
 
+.main-container .board {
+    min-height: 100vh;
+}
+
+/*STATISTICS*/
+
 .statistics-row {
     width: 100%;
     min-height: 10vh;      
     margin-bottom: 2vh;                                                               
-}
-
-.main-container .board {
-    min-height: 100vh;
 }
 
 .main-container .board .box {
@@ -214,4 +216,96 @@ html, body {
     color: #a43a56;
 }
 
+/*STATISTICS END*/
+
+/*USERS TABLE*/
+.users-table {
+    background: white;
+}
+
+.users-heading {
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(117, 114, 114); 
+    font-weight: 800;
+    border-bottom: 1px solid rgb(166, 165, 165);
+}
+
+.users-table table {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0; /* Ensure no spacing between cells */
+}
+
+.users-table table th {
+    color: rgb(117, 114, 114); 
+    font-weight: 800;
+    padding: 10px;
+}
+
+.users-table table th:nth-of-type(2) {
+    text-align: left;
+}
+
+.users-table table td {
+    text-align: center;
+    height: 100%;
+}
+
+.users-table table th:first-of-type{
+    width: 10%;
+}
+
+
+.users-table table th:nth-of-type(2){
+    width: 40%;
+}
+
+.details{
+    background: rgb(168, 165, 165);
+}
+
+
+.name-details {
+    text-align: left;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.name-details img{
+    width: 50px;
+    vertical-align: middle;
+}
+
+.name-details > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 13px;
+    line-height: 1.5;
+}
+
+.name-details div span {
+    display: block;
+}
+
+.name-details div span:first-of-type {
+    position: relative;
+    top: 0;
+}
+
+.name-details div span:last-of-type {
+    position: relative;
+    top: 0;
+}
+
+/*USERS TABLE END*/
 /*MAIN CONTAINER END*/
