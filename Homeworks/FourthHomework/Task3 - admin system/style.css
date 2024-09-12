@@ -330,20 +330,20 @@ html, body {
     color: white;
 }
 
-.table-status.yellow {
+.yellow {
     background: #f4be2d;
     color: black;
 }
 
-.table-status.green {
+.green {
     background: #41ca80;
 }
 
-.table-status.red {
+.red {
     background: #cd2856;
 }
 
-.table-status.blue {
+.blue {
     background: #19abf6;
 }
 
@@ -369,10 +369,15 @@ td button:hover {
 
 .percent-box {
     float: left;
-    width: 20%;
+    width: 22.75%;
     padding: 15px 13px;
     background: white;
     border-radius: 5px;
+    margin-right: 3%;
+}
+
+.percent-box:last-of-type {
+    margin-right: 0;
 }
 
 .percent-box .percent {
@@ -384,7 +389,6 @@ td button:hover {
 .percent-box .box-num.percent span {
     vertical-align: middle;
     width: 20%;
-    height: 30px;
 }
 
 .percent-box .progress-bar {
@@ -392,7 +396,12 @@ td button:hover {
     vertical-align: middle;
     background: #eaeef1;
     width: 70%;
-    height: 80%;
+    height: 2vh;
+}
+
+.progress-bar-colored {
+    height: 100%;
+    width: 25%;
 }
 
 .percent-box > span {
