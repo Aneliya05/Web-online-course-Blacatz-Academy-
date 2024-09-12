@@ -82,6 +82,7 @@ html, body {
     min-height: 90vh; 
     margin-top: 2vh;
     padding: 20px 25px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu {
@@ -142,12 +143,13 @@ html, body {
 
 /*MAIN CONTAINER*/
 .main-container {
-    background: rgb(231, 227, 227);
+    background: #eaeef1;
     float: left;
     width: 80%;
     min-height: 90vh; 
     margin-top: 2vh;
     padding: 25px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main-container .board {
@@ -221,6 +223,7 @@ html, body {
 /*USERS TABLE*/
 .users-table {
     background: white;
+    border-radius: 5px;
 }
 
 .users-heading {
@@ -236,8 +239,11 @@ html, body {
     border: none;
     padding: 0;
     margin: 0;
-    border-collapse: separate;
-    border-spacing: 0; /* Ensure no spacing between cells */
+    border-collapse: collapse;
+    /* OR
+     border-collapse:separate;
+     border-spacing: 0;
+    */
 }
 
 .users-table table th {
@@ -259,15 +265,18 @@ html, body {
     width: 10%;
 }
 
-
 .users-table table th:nth-of-type(2){
     width: 40%;
 }
 
-.details{
-    background: rgb(168, 165, 165);
+.grey-details{
+    background: #f7f7f7;
 }
 
+.table-id, .table-city {
+    color: rgb(117, 114, 114); 
+    font-weight: 600;
+}
 
 .name-details {
     text-align: left;
@@ -275,7 +284,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
 
 
 .name-details img{
@@ -300,12 +308,99 @@ html, body {
 .name-details div span:first-of-type {
     position: relative;
     top: 0;
+    color: rgb(117, 114, 114); 
+    font-weight: 800;
+    text-transform: capitalize;
 }
 
 .name-details div span:last-of-type {
     position: relative;
     top: 0;
+    color: rgb(117, 114, 114); 
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
+.table-status {
+    display: inline-block;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.table-status.yellow {
+    background: #f4be2d;
+    color: black;
+}
+
+.table-status.green {
+    background: #41ca80;
+}
+
+.table-status.red {
+    background: #cd2856;
+}
+
+.table-status.blue {
+    background: #19abf6;
+}
+
+td button {
+    color: white;
+    background: #3f6ad8;
+    border: unset;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: #19abf6;
+}
 /*USERS TABLE END*/
+
+/*PERCENTAGE*/
+.percents {
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2vh;
+}
+
+.percent-box {
+    float: left;
+    width: 20%;
+    padding: 15px 13px;
+    background: white;
+    border-radius: 5px;
+}
+
+.percent-box .percent {
+    float: left;
+    letter-spacing: 0.8px;
+    width: 100%;
+}
+
+.percent-box .box-num.percent span {
+    vertical-align: middle;
+    width: 20%;
+    height: 30px;
+}
+
+.percent-box .progress-bar {
+    display: inline-block;
+    vertical-align: middle;
+    background: #eaeef1;
+    width: 70%;
+    height: 80%;
+}
+
+.percent-box > span {
+    color: rgb(117, 114, 114); 
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: block;
+}
+/*PERCENTAGE END*/
 /*MAIN CONTAINER END*/
