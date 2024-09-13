@@ -12,17 +12,49 @@ html, body {
     clear: both;
 }
 
+/*FONT COLORS*/
+.fc-green {
+    color: #41ca80 !important;
+}
+
+.fc-yellow {
+    color: #edc447 !important;
+}
+
+.fc-red {
+    color: #a43a56 !important;
+}
+/*FONT COLORS*/
+
+/*BACKGROUND COLORS*/
+.green {
+    background: #41ca80;
+}
+
+.red {
+    background: #cd2856;
+}
+
+.blue {
+    background: #19abf6;
+}
+/*BACKGROUND COLORS*/
+
 /*HEADER*/
 
 .header {
     width: 100%;
-    min-height: 10vh;
-    padding: 20px;
+    min-height: 5vh;
+    padding: 15px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
 }
 
 .logo {
     float: left;
-    width: 20%;
+    width: 20.7%;
+    position: relative;
+    top: 0.4vh;
 }
 
 .header .logo img {
@@ -32,7 +64,7 @@ html, body {
 
 .search-bar {
     float: left;
-    width: 18%;
+    width: 25%;
     background: rgb(230, 227, 227);
     border-radius: 20px;
     padding: 10px 15px;
@@ -60,6 +92,8 @@ html, body {
     float: right;
     width: 50%;
     text-align: right;
+    position: relative;
+    top: 0.4vh;
 }
 
 .admin-profile img {
@@ -79,10 +113,9 @@ html, body {
 .side-menu {
     float: left;
     width: 20%;
-    min-height: 90vh; 
+    min-height: 100vh; 
     margin-top: 2vh;
-    padding: 20px 25px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+    padding: 25px 25px;
 }
 
 .menu {
@@ -115,7 +148,7 @@ html, body {
 }
 
 .menu div a:hover {
-    background: lightblue;
+    background: #19abf6;
 }
 
 .menu div a i {
@@ -146,10 +179,9 @@ html, body {
     background: #eaeef1;
     float: left;
     width: 80%;
-    min-height: 90vh; 
+    min-height: 100vh; 
     margin-top: 2vh;
     padding: 25px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main-container .board {
@@ -174,7 +206,7 @@ html, body {
     line-height: 20px;
     margin-right: 5%;
     border-radius: 5px;
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .board .box:nth-child(2) {
@@ -206,17 +238,6 @@ html, body {
     color: rgb(117, 114, 114); 
 }
 
-.statistics-row:last-of-type .box:first-of-type .box-num {
-    color: green;
-}
-
-.statistics-row:last-of-type .box:nth-of-type(2) .box-num {
-    color: #edc447;
-}
-
-.statistics-row:last-of-type .box:last-of-type .box-num {
-    color: #a43a56;
-}
 
 /*STATISTICS END*/
 
@@ -262,7 +283,7 @@ html, body {
 }
 
 .users-table table th:first-of-type{
-    width: 10%;
+    width: 15%;
 }
 
 .users-table table th:nth-of-type(2){
@@ -335,17 +356,6 @@ html, body {
     color: black;
 }
 
-.green {
-    background: #41ca80;
-}
-
-.red {
-    background: #cd2856;
-}
-
-.blue {
-    background: #19abf6;
-}
 
 td button {
     color: white;
@@ -363,8 +373,8 @@ td button:hover {
 /*PERCENTAGE*/
 .percents {
     width: 100%;
-    min-height: 20vh;
-    margin-top: 2vh;
+    min-height: 7vh;
+    margin: 2vh 0;
 }
 
 .percent-box {
@@ -374,6 +384,7 @@ td button:hover {
     background: white;
     border-radius: 5px;
     margin-right: 3%;
+    line-height: 1.4;
 }
 
 .percent-box:last-of-type {
@@ -389,6 +400,7 @@ td button:hover {
 .percent-box .box-num.percent span {
     vertical-align: middle;
     width: 20%;
+    color: #19abf6;
 }
 
 .percent-box .progress-bar {
@@ -401,7 +413,19 @@ td button:hover {
 
 .progress-bar-colored {
     height: 100%;
+}
+
+.progress-bar-colored.blue {
     width: 25%;
+}
+
+.progress-bar-colored.green {
+    width: 50%;
+}
+
+.progress-bar-colored.yellow,
+.progress-bar-colored.red {
+    width: 30%;
 }
 
 .percent-box > span {
@@ -412,4 +436,42 @@ td button:hover {
     display: block;
 }
 /*PERCENTAGE END*/
+
 /*MAIN CONTAINER END*/
+
+/*LINKS SECTION*/
+.links-section {
+    min-height: 4vh;
+    width: 80%;
+    position: relative;
+    bottom: 0;
+    left: 20%;
+    padding: 0px 25px;
+    background: #f7f7f7;
+    overflow: hidden; /*THAT IS AMAZING!!!!!!*/
+}
+
+.left-links {
+    float: left;
+}
+
+.right-links {
+    float: right;
+}
+
+.links-section a {
+    margin-right: 20px;
+    color: rgb(117, 114, 114); 
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 10px;
+}
+
+.right-links a:last-of-type {
+    margin-right: 0;
+}
+
+.links-section a:hover {
+    background: #19abf6;
+}
+/*LINKS SECTION END*/
