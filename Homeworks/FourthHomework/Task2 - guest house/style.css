@@ -1,0 +1,55 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.logo {
+    width: 20%;
+    background: yellow;
+    position: relative;
+}
+
+.logo-img {
+    display: inline-block;
+    width: 3%;
+    vertical-align: middle;
+}
+
+.names {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 15%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 800,
+    'GRAD' 200,
+    'opsz' 24;
+}
+
+span.customise {
+    font-size: 40px;
+    font-variation-settings: 'OPSZ' 24;
+    color: #8294c4;
+    font-variation-settings: 'FILL' 1;
+    vertical-align: top;
+}
+
+.guest-house {
+    display: inline-block;
+    width: 100%;
+}
+
+.house-name {
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    
+}
+
