@@ -4,9 +4,17 @@ html, body {
     padding: 0;
     margin: 0;
     width: 100%;
-    min-height: 100%;
-
+    min-height: 100vh;
     background: #e2dad6;
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('/Homeworks/FourthHomework/Task2 - guest house/Images/landscape.jpg');
+    background-position: center center;
+    background-size: cover;
+
 }
 
 * {
@@ -95,7 +103,7 @@ span.customise {
     width: 70%;
     text-align: right;
     position: relative;
-    top: 5px;
+    top: 4px;
 
 }
 
@@ -116,9 +124,10 @@ span.customise {
 .nav ul li a {
     text-decoration: none;
     color: white;
-    font-family: Comfortaa;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #4e5d84;
-    font-weight: 800;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 
@@ -134,14 +143,15 @@ span.customise {
     font-family: Great Vibes;
     color: #4e5d84;
     overflow: hidden;
+    height: 25vh;
 }
 
 .welcome-container h2 {
-   font-size: 6vh;
+   font-size: 7vh;
 }
 
 .welcome-container h1 {
-    font-size: 7vh;
+    font-size: 8vh;
  }
 
  .welcome-container .images {
@@ -152,12 +162,16 @@ span.customise {
     width: 70%;
     margin: 0 auto;
  }
+
+ .welcome-container .images {
+    
+ }
 /*WELCOME SECTION END*/
 
 /*ABOUT US SECTION*/
 .about-us-heading {
     position: relative;
-    top: 7vh;
+    top: 54vh;
     text-align: center; 
 }
 
@@ -167,12 +181,25 @@ span.customise {
     font-size: 5vh;
     text-transform: uppercase;
     text-decoration: underline;
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
     font-weight: 600;
+    color: white;
+    display: inline-block;
 }
 
 .about-us-heading i {
     font-size: 4vh; 
     color: #4e5d84;
+    color: white;
+}
+
+.about-us-heading h2:hover, .about-us-heading i:hover {
+    font-size: 6vh;
+}
+
+.about-us-container {
+    min-height: 89vh;
+    
+    background: #e2dad6;
 }
 /*ABOUT US SECTION END*/
