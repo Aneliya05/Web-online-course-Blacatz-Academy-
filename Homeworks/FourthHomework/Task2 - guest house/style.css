@@ -25,6 +25,27 @@ img {
     clear: both;
 }
 
+/*LINKS BETWEEN PAGES STYLES*/
+.link-heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vh;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.fa-solid.fa-chevron-down {
+    font-size: 4vh; 
+}
+
+.link-heading:hover, .fa-solid.fa-chevron-down:hover {
+    font-size: 6vh;
+}
+
+/*LINKS BETWEEN PAGES STYLES END*/
+
 .first-container {
     width: 100%;
     height: 100vh;
@@ -175,47 +196,33 @@ span.customise {
 
 /*WELCOME SECTION END*/
 
-/*ABOUT US SECTION*/
+/*ABOUT US LINK SECTION*/
 .about-us-heading {
     position: relative;
     top: 53vh;
     text-align: center; 
 }
 
-.about-us-heading h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #4e5d84;
-    font-size: 5vh;
-    text-transform: uppercase;
-    text-decoration: underline;
-    letter-spacing: 4px;
-    font-weight: 600;
+.about-us-heading h2{
     color: white;
-    display: inline-block;
 }
 
 .about-us-heading i {
-    font-size: 4vh; 
-    color: #4e5d84;
     color: white;
 }
 
-.about-us-heading h2:hover, .about-us-heading i:hover {
-    font-size: 6vh;
-}
-
 .about-us-container {
-    height: 89vh;
+    height: 126vh;
     width: 100%;
     position: absolute;
     top: 100vh;
     background: #e2dad6;
 }
-/*ABOUT US SECTION END*/
+/*ABOUT US LINK SECTION END*/
 
 
-/*LOCATION SECTION*/
-.location-section {
+/*LOCATION  AND HISTORY SECTION*/
+.location-section, .history-section {
     background: white;
     min-height: 50vh;
     width: auto;
@@ -224,7 +231,7 @@ span.customise {
     text-align: center;
 }
 
-.location-section h2 {
+.location-section h2, .history-section h2 {
     text-transform: capitalize;
     font-family: Great Vibes;
     font-size: 6vh;
@@ -232,31 +239,31 @@ span.customise {
     padding: 10px 0 0;
 }
 
-.location-img {
+.location-img{
     float: left;
     width: 30%;
     height: 40vh;
     padding: 15px 25px; 
 }
 
-.location-section img {
+.location-section img, .history-section img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.location-section .location-text {
+.location-section .location-text, .history-section .history-text {
     float: left;
     width: 68%;
     text-align: justify;
 }
 
-.location-text p {
+.location-text p, .history-text p {
     font-family: Comfortaa;
     font-weight: 700;
 }
 
-.location-section button {
+.location-section button, .history-section button {
     cursor: pointer;
     float: right;
     padding: 10px;
@@ -264,17 +271,111 @@ span.customise {
     background: #5a6743;  
 }
 
-.location-section button i {
+.location-section button i, .history-section button i {
     margin-right: 8px;
     color: white;
 }
 
-.location-section button a {
+.location-section button a, .history-section button a {
     text-decoration: none;
     color: white;
 }
 
-.location-section button:hover {
+.location-section button:hover, .history-section button:hover {
     background: #839367;
 }
-/*LOCATION SECTION END*/
+
+.history-img {
+    float: right;
+    width: 30%;
+    height: 40vh;
+    padding: 15px 25px; 
+    text-align: right;
+}
+
+.history-text {
+    float: right;
+    width: 68%;
+    padding: 15px 25px; 
+}
+/*LOCATION AND HISTORY SECTION END*/
+
+/*ROOMS LINK SECTION*/
+.rooms-heading {
+    text-align: center;
+}
+
+.rooms-heading h2 {
+    color: #4e5d84;
+}
+
+.rooms-heading i {
+    color: #4e5d84;
+}
+/*ROOM LINK SECTION END*/
+
+/*ROOMS INFO CONTAINER*/
+.rooms-container {
+    width: 100%;
+    position: relative;
+    top: 126vh;
+    height:89vh;
+    margin: 5vh;
+    width: auto;
+}
+
+.rooms-row {
+    width: 100%;
+}
+
+.room {
+    
+}
+
+.room-img {
+    width: 25%;
+    height: 30vh;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1%;
+} 
+
+.room-img img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.room-text {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    height: 27.5vh;
+    padding: 10px;
+    position: relative;
+}
+
+.room-text h3 {
+    font-family: Great Vibes;
+    font-size: 35px;
+}
+
+.room-text p {
+    line-break: normal;
+    text-align: justify;
+    font-family: Comfortaa;
+    font-size: 15px;
+    margin: 0;
+    
+}
+
+.room-text span {
+    font-weight: 800;
+    font-family: Pacifico;
+    display: inline-block;
+    position: relative;
+    top: 31%;
+    font-size: 25px;
+    
+}
+/*ROOMS INFO CONTAINER END*/
+
