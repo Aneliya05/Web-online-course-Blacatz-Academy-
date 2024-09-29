@@ -319,22 +319,32 @@ span.customise {
     width: 100%;
     position: relative;
     top: 126vh;
-    height:89vh;
+    height: 89vh;
     margin: 5vh;
     width: auto;
+    background: white;
 }
 
 .rooms-row {
     width: 100%;
+    margin-bottom: 7vh;
+    min-height: 35vh;
 }
 
 .room {
+    float: left;
+    width: 45%;
+    min-height: 10%;
     
 }
 
+.float-right {
+    float: right;
+}
+
 .room-img {
-    width: 25%;
-    height: 30vh;
+    width: 55%;
+    max-height: 30vh;
     vertical-align: middle;
     display: inline-block;
     margin-right: 1%;
@@ -347,35 +357,88 @@ span.customise {
 
 .room-text {
     display: inline-block;
-    width: 20%;
+    width: 43%;
     vertical-align: top;
-    height: 27.5vh;
-    padding: 10px;
+    min-height: 27.5vh;
+    padding: 0 10px 10px;
     position: relative;
 }
 
 .room-text h3 {
     font-family: Great Vibes;
     font-size: 35px;
+    margin-bottom: 1vh;
+    color:#4e5d84;
+}
+
+.room-text div > p {
+    height: 15vh;
+    width: 100%;
+    overflow: auto;
+    position: relative;
 }
 
 .room-text p {
-    line-break: normal;
+    line-break: strict;
     text-align: justify;
     font-family: Comfortaa;
     font-size: 15px;
-    margin: 0;
-    
+    overflow: auto;
 }
 
 .room-text span {
     font-weight: 800;
     font-family: Pacifico;
     display: inline-block;
-    position: relative;
-    top: 31%;
     font-size: 25px;
+    position: absolute;
+    top: 100%;
     
 }
 /*ROOMS INFO CONTAINER END*/
 
+/*SPA LINK SECTION*/
+.spa-heading {
+    text-align: center;
+    background: #4e5d84;
+    border-radius: 10px;
+    padding: 5px 0;
+    height: 16vh;
+}
+
+.spa-heading h2 {
+    color: white;
+}
+
+.spa-heading i {
+    color: white;
+    font-size: 4vh;
+}
+/*SPA LINK SECTION END*/
+
+/*SPA CONTAINER*/
+.spa-container {
+    width: 100%;
+    position: relative;
+    top: 130vh;
+    height: 89vh;
+    width: auto;
+    margin: 5vh;
+    padding: 15px 5px;
+    background: #e2dad6;
+    border-radius: 10px;
+}
+
+.spa-service {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    line-break:strict;
+    overflow-x: auto;
+
+}
+
+.spa-service:last-of-type {
+    margin-right: 0;
+}
+/*SPA CONTAINER END*/
