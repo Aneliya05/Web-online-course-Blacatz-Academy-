@@ -54,7 +54,7 @@ img {
         rgba(0, 0, 0, 0), 
         rgba(0, 0, 0, 0.4)
       ),
-      url('/Homeworks/FourthHomework/Task2 - guest house/Images/landscape.jpg');
+      url('Images/landscape.jpg');
     background-position: center center;
     background-size: cover;
     padding: 0;
